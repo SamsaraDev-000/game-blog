@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">Gamer<span>Hub Pro</span></div>
+        <ul class="nav-menu">
+            <li><a href="#games">الألعاب</a></li>
+            <li><a href="#ai-apps">تطبيقات ذكاء اصطناعي</a></li>
+            <li><a href="#tips">النصائح</a></li>
+            <li><a href="#footer">تواصل</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>🎮 عالم الألعاب والذكاء الاصطناعي</h1>
+            <p>منصتك الشاملة لأفضل الألعاب وتطبيقات الذكاء الاصطناعي بمراجعات حقيقية وتفصيلية</p>
+            <button class="cta-button" onclick="document.getElementById('games').scrollIntoView({behavior: 'smooth'})">ابدأ الآن</button>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <div class="container">
+        <h2 id="games" class="section-title">🎯 أفضل ألعاب الهاتف 2026</h2>
+
+        <div class="filter-section">
+            <input type="text" class="search-box" id="searchBox" placeholder="ابحث عن لعبة...">
+            <button class="filter-btn active" onclick="filterGames('all')">كل الألعاب</button>
+            <button class="filter-btn" onclick="filterGames('خفيفة')">خفيفة</button>
+            <button class="filter-btn" onclick="filterGames('باتل رويال')">باتل رويال</button>
+            <button class="filter-btn" onclick="filterGames('قتال')">قتال</button>
+        </div>
+
+        <div class="games-grid" id="gamesGrid">
+            <!-- Games will be inserted here -->
+        </div>
+
+        <div class="no-results" id="noResults">
+            <h3>لم نجد نتائج</h3>
+            <p>جرب البحث عن شيء آخر</p>
+        </div>
+    </div>
+
+    <!-- AI Apps Section -->
+    <div class="container">
+        <h2 id="ai-apps" class="section-title">🤖 تطبيقات الذكاء الاصطناعي المتقدمة</h2>
+
+        <div class="filter-section">
+            <input type="text" class="search-box" id="appsSearch" placeholder="ابحث عن تطبيق ذكاء اصطناعي...">
+            <button class="filter-btn active" onclick="filterApps('all')">الكل</button>
+            <button class="filter-btn" onclick="filterApps('LLM')">نماذج لغوية</button>
+            <button class="filter-btn" onclick="filterApps('صور')">معالجة صور</button>
+            <button class="filter-btn" onclick="filterApps('فيديو')">فيديو وتحرير</button>
+        </div>
+
+        <div class="games-grid" id="appsGrid">
+            <!-- Apps will be inserted here -->
+        </div>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="container">
+        <h2 class="section-title">📊 مقارنة تطبيقات الذكاء الاصطناعي</h2>
+        <div class="comparison-table">
+            <table id="comparisonTable">
+                <thead>
+                    <tr>
+                        <th>التطبيق</th>
+                        <th>النموذج</th>
+                        <th>السعر</th>
+                        <th>سرعة الاستجابة</th>
+                        <th>دقة النتائج</th>
+                        <th>الخصوصية</th>
+                    </tr>
+                </thead>
+                <tbody id="comparisonBody">
+                    <!-- Table rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Tips Section -->
+    <div class="container">
+        <h2 id="tips" class="section-title">💡 نصائح استراتيجية متقدمة</h2>
+
+        <div class="tips-section">
+            <div class="tips-grid" id="tipsGrid">
+                <!-- Tips will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#about">حول الموقع</a>
+                <a href="#privacy">الخصوصية</a>
+                <a href="#terms">الشروط</a>
+                <a href="#contact">تواصل معنا</a>
+            </div>
+            <p>Demo Project</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
